@@ -1,0 +1,8 @@
+# PYTHON
+.venv
+__pycache__
+
+
+# FastHTML
+.sesskey
+
