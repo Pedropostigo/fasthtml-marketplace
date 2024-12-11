@@ -1,13 +1,7 @@
 from fasthtml.common import Div, H3, P, Form, Input, Button
-from dataclasses import dataclass
 
 from app_src.styles.sucess_message_style import SUCCESS_MESSAGE_STYLE
-
-@dataclass
-class Event:
-    event_name: str
-    event_date_time: str
-
+from app_src.events.event import Event
 
 class CreateEventForm():
 

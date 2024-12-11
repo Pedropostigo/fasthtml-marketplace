@@ -1,6 +1,6 @@
 from fasthtml.common import FastHTML, serve, RedirectResponse
 
-from app_src.create_event import CreateEventForm, Event
+from app_src.events.create_event import CreateEventForm, Event
 
 from database.database import DataBase
 
