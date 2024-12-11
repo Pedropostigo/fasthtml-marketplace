@@ -15,8 +15,7 @@ class DataBase():
         self.db_path = os.path.join(MODULE_PATH,"database", "database.db")
         self.connection_string = 'sqlite://' + "database/database.db"
         
-        with sql.connect(self.db_path) as conn:
-            pass
+        self.create_schema()
 
     
     def create_schema(self):
@@ -46,7 +45,6 @@ class DataBase():
 if __name__ == "__main__":
 
     db = DataBase()
-    db.create_schema()
 
-    db.insert_event(event_name = "my event", event_date_time = datetime(2024, 1, 1, 12, 0, 0))
-    db.get_events()
+    # db.insert_event(event_name = "my event", event_date_time = datetime(2024, 1, 1, 12, 0, 0))
+    print(db.get_events())
